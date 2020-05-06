@@ -3,7 +3,7 @@ title: monster-yasso Blog    #博客的标题
 SEOTitle: Yang FF的博客 | BY Blog  #显示在浏览器上搜索的时候显示的标题
 header-img: img/post-bg-desk.jpg  #显示在首页的背景图片
 email: 17693461853@163.com
-description: "Every failure is leading towards success."  #网站介绍
+description: "Over time, we can only succeed"  #网站介绍
 keyword: "BY, BY Blog, Monster的博客, YangRuifan, Fan, hurry"  #关键词
 url: "http://monster-yasso.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'  # 这个就是填写你的博客地址
