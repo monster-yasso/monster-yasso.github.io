@@ -1,28 +1,32 @@
 # Site settings
-title: YRF MONSTER
-SEOTitle: 怪兽的博客 | YRF MONSTER
-header-img: img/post-bg-desk.jpg
+title: monster-yasso Blog    #博客的标题
+SEOTitle: Yang YY的博客 | BY Blog  #显示在浏览器上搜索的时候显示的标题
+header-img: img/post-bg-desk.jpg  #显示在首页的背景图片
 email: 17693461853@163.com
-description: "Persevere in learning a little every day, no trouble in the world"
-keyword: "YRF,YRF MONSTER, 怪兽的博客, 杨瑞帆, yangruifan, java, web"
+description: "Every failure is leading towards success."  #网站介绍
+keyword: "BY, BY Blog, Monster的博客, YangRuifan, Fan, hurry"  #关键词
 url: "http://monster-yasso.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'  # 这个就是填写你的博客地址
+github_repo: "https://github.com/monster-yasso/monster-yasso.github.io.git" # you code repository 
+
+## jekyll的_posts文件夹中不允许放图片，需要把图片放到根目录下，如：images/test.png
+
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: true                           # whether or not using Sidebar.   # 是否开启侧边栏.
+sidebar-about-description: "Goals determine what you going to be!" # 描述
+sidebar-avatar: /img/avatar_m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/` # 你的个人头像
 
 
 
 # SNS settings
 RSS: false
-# weibo_username:     monster-yasso
-zhihu_username:     monster-yasso
+# weibo_username:     qiubaiying
+weibo_username:     
+zhihu_username:     
 github_username:    monster-yasso
-facebook_username:  monster-yasso
-jianshu_username:   jianshu_id
+#facebook_username:  baiying.qiu.7
+#jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
 
 
@@ -60,23 +64,14 @@ kramdown:
 # disqus_username: qiubaiying
 
 # Gitalk
-<!-- Link Gitalk 的支持文件  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
-<div id="gitalk-container"></div>     <script type="text/javascript">
-    var gitalk = new Gitalk({
-
-    // gitalk的主要参数
-		clientID: `Github Application clientID`,
-		clientSecret: `Github Application clientSecret`,
-		repo: monster-yasso.github.io,
-		owner: 'monster-yasso',
-		admin: ['monster-yasso'],
-		id: '页面的唯一标识，gitalk会根据这个标识自动创建的issue的标签',
-    distractionFreeMode: true    
-    });
-    gitalk.render('gitalk-container');
-</script>
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: eeca9ad5702b01a57734                            #生成的clientID
+  clientSecret: d90406219e6f09d78c7798878046828e1cc0ae69    #生成的clientSecret
+  repo: monster-yasso.github.io    #仓库名称
+  owner: monster-yasso    #github用户名
+  admin: monster-yasso
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
@@ -87,8 +82,8 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
 ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
+# ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: auto
 
 
 
@@ -107,17 +102,17 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        title: "WY",
-        href: "http://zhengwuyang.com"
-    },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
-    },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
-    }
+    # {
+    #     title: "WY",
+    #     href: "http://zhengwuyang.com"
+    # },{
+    #     title: "简书·BY",
+    #     href: "http://www.jianshu.com/u/e71990ada2fd"
+    # },{
+    #     title: "Apple",
+    #     href: "https://apple.com"
+    # },{
+    #     title: "Apple Developer",
+    #     href: "https://developer.apple.com/"
+    # }
 ]
